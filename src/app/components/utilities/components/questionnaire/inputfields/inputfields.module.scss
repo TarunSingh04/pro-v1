@@ -1,0 +1,152 @@
+// column gap-8 text_label input_field radiobutton
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+  }
+
+.gap_8{
+    margin: 8px 0;
+}
+
+.text_label {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.inputfield{
+    width: 100%;
+    height: 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 8px 4px;
+    margin: 4px 0;
+  }
+
+  .textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 8px 4px;
+    
+  }
+  
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.radiobutton{
+    border-radius: 50%;
+    border: 1px solid #7c7c7c;
+    vertical-align: top;
+    margin-top: 3px;
+  }
+  
+.radiobutton:hover{
+    cursor: pointer;
+  }
+
+
+.optiontext{
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: #7c7c7c;
+    padding-left: 10px;
+  }  
+
+  .checkbox{
+    margin-top: 3px;
+  }
+
+
+  .App {
+    font-family: sans-serif;
+  }
+  
+  .dropdown {
+    position: relative;
+    color: #333;
+    cursor: default;
+  
+    .arrow {
+      border-color: #999 transparent transparent;
+      border-style: solid;
+      border-width: 5px 5px 0;
+      content: " ";
+      display: block;
+      height: 0;
+      margin-top: 0.3rem;
+      position: absolute;
+      right: 10px;
+      top: 14px;
+      width: 0;
+  
+      &.open {
+        border-color: transparent transparent #999;
+        border-width: 0 5px 5px;
+      }
+    }
+  
+    .selected_value {
+      input {
+        line-height: 1.5;
+        font-size: 1rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+        cursor: default;
+        outline: none;
+        padding: 8px 52px 8px 10px;
+        transition: all 200ms ease;
+        width: 100%;
+      }
+    }
+  
+    .options {
+      display: none;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+      box-sizing: border-box;
+      margin-top: -1px;
+      max-height: 200px;
+      overflow-y: auto;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      z-index: 1000;
+      -webkit-overflow-scrolling: touch;
+  
+      &.open {
+        display: block;
+      }
+  
+      .option {
+        box-sizing: border-box;
+        color: rgba(51, 51, 51, 0.8);
+        cursor: pointer;
+        display: block;
+        padding: 8px 10px;
+  
+        &.selected,
+        &:hover {
+          background-color: #f2f9fc;
+          color: #333;
+        }
+      }
+    }
+  }
+  
